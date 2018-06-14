@@ -1,0 +1,134 @@
+/* pages/component/dzgl/dzgl.wxss */
+.fl{
+  float:left;
+}
+page{
+  background: #f7f7f7;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.noshdz{
+  width: 100%;
+}
+.noshdz .img{
+  width: 420rpx;
+  height: 260rpx;
+  margin:0rpx auto;
+}
+.h105{
+  height:105rpx;
+}
+.noshdz .img image{
+  width: 420rpx;
+  height: 260rpx;
+}
+.noshdz .mtit{
+  text-align: center;
+  font-size: 28rpx;
+  color: #969495;
+}
+.noshdz .tjxdz{
+  width: 675rpx;
+  height: 90rpx;
+  color: #1f1e1f;
+  background: #fff;
+  border-radius: 10rpx;
+  border:1rpx solid #f0ebf0;
+  display: block;
+  margin: 0 auto;
+  font-size: 28rpx;
+  box-shadow: 2rpx 2rpx 2rpx #f0ebf0;
+}
+.h40{
+  height:40rpx;
+}
+.hasshdz .address{
+margin-top: 15rpx;
+padding: 25rpx 20rpx;
+border-bottom: 2rpx solid #e6e6e6;
+background-color: #fff;
+}
+.hasshdz .address view-item{
+  display: block;
+  width: 100%;
+  height: 115rpx;
+}
+.hasshdz .address .dz{
+  width: 600rpx;
+}
+.hasshdz .address .dz .dzxq{
+  font-size: 30rpx;
+  color: #212420;
+}
+.hasshdz .address .dz .lxfs{
+  color: #918e92;
+  font-size: 28rpx;
+}
+.hasshdz .address .xz{
+  width: 25rpx;
+  height: 25rpx;
+}
+.hasshdz .address image{
+ width: 25rpx;
+  height: 25rpx;
+}
+/*  重写 radio 样式  */
+radio .wx-radio-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: #9bd344;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.adddz{
+  width: 100%;
+  position: fixed;
+  height: 95rpx;
+  border-top:2rpx solid #e6e6e6;
+  background:#fff;
+  bottom: 0;
+}
+.addzW{
+  width: 240rpx;
+  height: 40rpx;
+  margin:25rpx auto;
+}
+.addzW .jia{
+  width: 39rpx;
+  height: 39rpx;
+  border: 4rpx solid #5abdef;
+  color: #5abdef;
+  text-align: center;
+  line-height: 33rpx;
+  border-radius: 50%;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.addzW .zi{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  width: 190rpx;
+}

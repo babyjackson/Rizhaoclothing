@@ -1,0 +1,136 @@
+<!--pages/component/lineitem/lineitem.wxml-->
+<!--顶部-->
+<view class="ostatus">
+  <view class="status clearfix {{status.cur == 0?'show':''}}" wx:if="{{status.cur == 0}}">
+    <view class="dl fl">
+      <view class="sta">等待买家付款</view>
+      <view class="tips">剩23小时59分钟自动关闭！</view>
+    </view>
+    <view class="figure fr">
+      <image src="{{imgurl}}/images/linestatus-0.png"></image>
+    </view>
+  </view>
+  <view class="status clearfix {{status.cur == 1?'show':''}}" wx:elif="{{status.cur == 1}}">
+    <view class="dl fl">
+      <view class="sta">买家已付款</view>
+      <view class="tips">您已成功订购该商品！</view>
+    </view>
+    <view class="figure fr">
+      <image src="{{imgurl}}/images/linestatus-1.png"></image>
+    </view>
+  </view>
+  <view class="status clearfix {{status.cur == 2?'show':''}}" wx:elif="{{status.cur == 2}}">
+    <view class="dl fl">
+      <view class="sta">卖家已发货</view>
+      <view class="tips">还剩9天23小时自动确认收货</view>
+    </view>
+    <view class="figure fr">
+      <image src="{{imgurl}}/images/linestatus-2.png"></image>
+    </view>
+  </view>
+  <view class="status clearfix {{status.cur == 3?'show':''}}" wx:elif="{{status.cur == 3}}">
+    <view class="dl fl">
+      <view class="sta">交易成功</view>
+    </view>
+    <view class="figure fr">
+      <image src="{{imgurl}}/images/linestatus-3.png"></image>
+    </view>
+  </view>
+</view>
+<!--地址-->
+<view class="addressinfo">
+  <view class="consignee clearfix">
+    <text class="fl">收货人：张某某</text>
+    <text class="fr">12345678911</text>
+  </view>
+  <view class="address">
+    <view class="ico fl"><image src="{{imgurl}}/images/dzico.png"></image></view>
+    <view class="addr fl">收货地址：江苏省南京市秦淮区珠江路１５号某某大厦121室</view>
+  </view>
+</view>
+<view class="h-10"></view>
+<!--商品info-->
+<view class="goodsinfo">
+  <view class="storename clearfix">
+    <view class="fl ico"><image src="{{imgurl}}/images/storeico@50rpx.png"></image></view>
+    <view class="name fl">亚瑟士</view>
+    <view class="alt fl"><image src="{{imgurl}}/images/altr_1.png"></image></view>
+  </view>
+  <view class="goodes">
+    <view class="h-10"></view>
+    <view class="clearfix">
+      <view class="figure fl">
+        <image src="{{imgurl}}/images/allimg.jpg"></image>
+      </view>
+      <view class="info fl">
+        <view class="design">
+        阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿阿玛尼阿玛尼阿玛尼阿阿
+        </view>
+      </view>
+      <view class="pdl fr">
+        <view class="price">¥34.66</view>
+        <view class="yprice">¥39.66</view>
+        <view class="num">x1</view>
+        <navigator wx:if="{{status.cur == 0}}" class="gsqtk fr" url="/pages/components/cartw/balance/balance">去付款</navigator>
+        <view wx:elif="{{status.cur == 3}}"></view>
+        <navigator wx:else class="gsqtk fr" url="/pages/components/refund/refund">退款</navigator>
+      </view>
+    </view>
+    <view class="h-30"></view>
+  </view>
+  <view class="payinfo">
+    <view class="section clearfix">
+      <view class="lab fl">支付方式</view>
+      <view class="vr fr">微信支付</view>
+    </view>
+    <view class="section clearfix">
+      <view class="lab fl">运费</view>
+      <view class="vr fr">¥0.00</view>
+    </view>
+    <view class="section clerafix">
+      <view class="lab fl">实付款（含运费）</view>
+      <view class="vr yellow fr">¥45.00</view>
+    </view>
+  </view>
+</view>
+<!--联系拨打电话-->
+<view class="contactway">
+  <button class="seller fl">
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/sellerico.png"></image>
+    </view>
+    <text class="fl">联系卖家</text>
+  </button>
+  <button class="calltel fr">
+    <view class="ico fl">
+      <image src="{{imgurl}}/images/calltelico.png"></image>
+    </view>
+    <text class="fl">拨打电话</text>
+  </button>
+</view>
+<!--创建-->
+<view class="createo">
+  <view class="creattiem">创建时间：2017-12-09 18:33:11</view>
+  <view class="paytime">付款时间：2017-12-09 18:34:11</view>
+</view>
+<!--猜你喜欢-->
+<view class="cnxh clearfix">
+  <view class="cnxhtit"># 为你精选 #</view>
+  <view class="like clearfix">
+    <navigator class="item" wx:for="{{like}}" wx:key="id" url="{{item.url}}">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="price">¥{{item.price}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>   
+<!--底部-->
+<!--固定申请退款
+<view class="refund clearfix">
+  <navigator class="sqtk fl" url="/pages/component/refund/refund">申请退款</navigator>
+</view>
+-->

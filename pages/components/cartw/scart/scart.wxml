@@ -1,0 +1,69 @@
+<!--pages/components/cartw/scart/scart.wxml-->
+<view class="carthasgoods" wx:if="{{carts.length>0}}">
+  <view class="storegoods" wx:for="{{carts}}" wx:for-index="parentindex" wx:key="id">
+    <view class="store">
+      <!--选中-->
+      <icon class="fl" wx:if="{{item.storeselect == '1'}}" type="success" color="#5abdef" bindtap="storeselectAll" data-parentIndex="{{parentindex}}"/>
+      <icon class="fl" wx:else type="circle" bindtap="storeselectAll" data-parentIndex="{{parentindex}}"/>
+      <view class="ico fl">
+        <image src="{{imgurl}}/images/storeico@50rpx.png"></image>
+      </view>
+      <navigator class="fl" url="{{item.storeurl}}">
+        <view class="storename fl">{{item.sname}}</view>
+        <view class="alt fl"><image src="{{imgurl}}/images/altr_1.png"></image></view>
+      </navigator>
+    </view>
+    <view class="goodslist clearfix" wx:for="{{item.list}}" wx:key="id" wx:for-index="index" wx:for-item="list">
+      <icon class="fl" wx:if="{{list.select == '1'}}" type="success" color="#5abdef" bindtap="selectList" data-index="{{index}}" data-parentIndex="{{parentindex}}"/>
+      <icon class="fl" wx:else type="circle" bindtap="selectList" data-index="{{index}}" data-parentIndex="{{parentindex}}"/>
+      <navigator class="goodsimg fl" url="{{list.gurl}}">
+        <image src="{{list.img}}"></image>
+      </navigator>
+      <view class="goosr fr">
+        <view class="titW clearfix">
+          <navigator class="tit fl" url="{{list.gurl}}">{{list.gname}}</navigator>
+          <view class="price fr">¥{{list.price}}</view>
+        </view>
+        <view class="h-20"></view>
+        <view class="wrap clearfix">
+          <view class="jgnum fl">
+            <view class="num fl clearfix">
+              <view class="minus fl" bindtap="minusCount" data-index="{{index}}" data-parentIndex="{{parentindex}}">-</view>
+              <input type="number" class="fl" value="{{list.num}}" disabled="true"></input>
+              <view class="plus fl" bindtap="addCount" data-index="{{index}}" data-parentIndex="{{parentindex}}">+</view>
+            </view>
+          </view>
+          <view class="cancel fr" bindtap="deleteList" data-index="{{index}}" data-parentIndex="{{parentindex}}">
+            <image src="{{imgurl}}/images/deleteico@50rpx.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--没有商品-->
+<view class="hasnogoods {{carts.length == 0 ? 'show':''}}" wx:else>
+  <view class="h-55"></view>
+  <view class="figure">
+    <image src="{{imgurl}}/images/nocart_1.png"></image>
+  </view>
+  <view class="tips">
+    购物车空空一片，
+    <text>快去逛逛吧！</text>
+  </view>
+  <view class="h_55"></view>
+  <navigator class="go_shop">立即去购物</navigator>
+</view>
+<!--底部-->
+<view class="h-100"></view>
+<view class="gwcdb clearfix">
+  <!-- wx:if 是否全选显示不同图标 -->
+  <icon class="fl" wx:if="{{selectAllStatus == '1'}}" type="success" color="#5abdef" bindtap="selectAll"/>
+  <icon class="fl" wx:else type="circle" bindtap="selectAll"/>
+  <text class="quanxuan fl">全选</text>
+  <navigator class="accounts fr" url="/pages/components/cartw/balance/balance">结算</navigator>
+  <view class="sum fr">
+  合计:
+  <text class="hejprice">¥{{totalPrice}}</text>
+  </view>
+</view>  

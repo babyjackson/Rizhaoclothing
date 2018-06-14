@@ -1,0 +1,43 @@
+<!--pages/component/hykw/hykxq/hykxq.wxml-->
+<view class="hykxqw">
+  <!--vip卡-->
+  <view class="vipcard">
+    <view class="vcardbg">
+      <image src="{{imgurl}}/images/vipcard.png"></image>
+    </view>
+    <view class="viplevel">普通会员</view>
+  </view>
+  <!--专享权益-->
+  <view class="zxqy">
+    <view class="titw">专享权益</view>
+    <view class="hyzk clearfix">
+      <view class="fl ico">
+        <image src="{{imgurl}}/images/vipico_1.png"></image>
+      </view>
+      <view class="tit fl">会员折扣</view>
+      <view class="zk fr">9.9折</view>
+    </view>
+  </view>
+  <view class="others">
+    <view class="titw">其他</view>
+    <view class="otherli">
+      <view-item>
+        <navigator class="clearfix" url="/pages/components/clubcard/vipsm/vipsm">
+          <view class="fl ico">
+            <image src="{{imgurl}}/images/vipico_2.png"></image>
+          </view>
+          <view class="tit fl">会员卡说明</view>
+          <view class="fr alt">
+            <image src="{{imgurl}}/images/altr_1.png"></image>
+          </view>
+          <view class="dhz fr"></view>
+        </navigator>
+      </view-item>
+    </view>
+  </view>
+</view>
+<!--购买卡-->
+<view class="buycard">
+  <navigator class="buy" url='/pages/components/clubcard/vipbuy/vipbuy'>购买会员</navigator>
+</view>
+

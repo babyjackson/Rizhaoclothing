@@ -1,0 +1,36 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.clearfix::after{
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  clear:both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+  overflow:hidden;
+}
+.scroll-view-item_H{
+  display: inline-block;
+}

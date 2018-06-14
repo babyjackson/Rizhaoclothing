@@ -1,0 +1,11 @@
+<!--pages/component/cleargoods/cleargoods.wxml-->
+<view class="cleargoodxq clearfix" wx:for="{{clearfixgoods}}" wx:key="id">
+  <view class="figure fl">
+    <image src="{{item.imgsrc}}"></image>
+  </view>
+  <view class="tit fl">{{item.tit}}</view>
+  <view class="dl fr">
+    <view class="price">¥{{item.price}}</view>
+    <view class="num">x{{item.num}}</view>
+  </view>
+</view>

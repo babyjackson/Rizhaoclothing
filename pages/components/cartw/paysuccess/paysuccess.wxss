@@ -1,0 +1,179 @@
+/* pages/component/zfcg/zfcg.wxss */
+.h-25{
+  height: 25rpx;
+}
+page{
+  background: #eeeeee;
+}
+.h120{
+  height: 120rpx;
+}
+.cnxh{
+  background-color: #eeeeee;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+   background-color: #eeeeee;
+}
+.topgou{
+  height: 380rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #eeeeee;
+  background: #fff;
+}
+.gouw{
+  width: 220rpx;
+  height:180rpx;
+  margin:0rpx auto 50rpx;
+  padding-top:60rpx; 
+}
+.gouw .gou{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  text-align: center;
+  margin:0 auto;
+  font-size: 50rpx;
+  color: #fff;
+  overflow: hidden;
+  line-height: 80rpx;
+}
+.gouw .redzi{
+  text-align: center;
+  color: #f03e39;
+  font-size: 26rpx;
+}
+.topgou .btn{
+  width: 690rpx;
+  height: 70rpx;
+  margin: 0 auto;
+}
+.topgou .btn navigator{
+  display: block;
+  width: 325rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #262626;
+  background: #fff;
+}
+.topgou .btn .btn1{
+  border: 2rpx solid #d2cdd2;
+  color: #0c0b0c;
+}
+.topgou .btn .btn2{
+  border: 2rpx solid #d2cdd2;
+  color: #0c0b0c;
+}
+
+.aqtx{
+  font-size: 25rpx;
+  color: #8b898c;
+  padding: 30rpx 30rpx 50rpx 30rpx;
+  background: #fff;
+}
+.aqtx .tit{
+  margin-bottom:15rpx;
+}
+.h15{
+  background: #efefef;
+  height: 15rpx;
+}
+.h2{
+   background: #efefef;
+    height: 2rpx;
+}
+.ddxq{
+  padding: 20rpx 30rpx;
+  color: #656565;
+  font-size: 25rpx;
+  background: #fff;
+}
+.ddxq .tit{
+  color: #292929;
+  background: #fff;
+}
+.goodscon{
+  padding: 30rpx 20rpx;
+  background: #fff;
+}
+.goodscon .img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.goodscon .img image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.goodscon .titleC{
+  width: 410rpx;
+  font-size: 22rpx;
+  color: #1a1a1a;
+  margin-left: 20rpx;
+  line-height: 30rpx;
+}
+.goodscon .titleC .tit{
+  max-height: 70rpx;
+}
+.goodscon .price{
+  padding-top: 20rpx;
+}
+.goodscon .zmyd{
+  width: 110rpx;
+  height: 50rpx;
+  border: 3rpx solid #f03e39;
+  color: #f03e39;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  margin-top:10rpx;
+}
+
+/***猜你喜欢***/
+.like{
+  padding: 0 20rpx;
+}
+.like .item{
+  width: 345rpx;
+  height: 530rpx;
+  background: #fff;
+  border-radius: 5rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.like .item:nth-of-type(odd){
+  float: left;
+}
+.like .item:nth-of-type(even){
+  float: right;
+}
+.like .item .figure{
+  width: 345rpx;
+  height: 345rpx;
+}
+.like .item .figure image{
+  display: block;
+  width: 345rpx;
+  height: 345rpx;
+}
+
+.like .item .tit{
+  max-height: 85rpx;
+  overflow: hidden;
+  width: 310rpx;
+  margin: 15rpx auto;
+  font-size: 24rpx;
+  color: #393939;
+  line-height: 40rpx;
+}
+.like .item .price{
+  font-size: 36rpx;
+  color: #fe4a9f;
+  line-height: 40rpx;
+  width: 310rpx;
+  margin: 0 auto;
+}

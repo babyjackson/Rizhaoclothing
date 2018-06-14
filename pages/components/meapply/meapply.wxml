@@ -1,0 +1,46 @@
+<!--pages/components/meapply/meapply.wxml-->
+<view class="apply {{active ? 'expand' : ''}}">
+  <view class="item clearfix" wx:for="{{apply}}" wx:key="id" wx:for-index="index">
+    <view class="figure fl">
+      <image src="{{item.logo}}"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="time"><text>·</text>{{item.time}}</view>
+    </view>
+    <view class="btn fr {{statusClass}}{{item.sta}}" bindtap="proAlert" data-index="{{index}}">{{item.staname}}</view>
+  </view>
+  <!--弹层-->
+  <view class="dropdown-bg" bindtap="catchBgTap"></view>
+  <view class="dealertw" wx:if="{{status == 2}}">
+    <view class="dealert">
+      <view class="figuretop">
+        <image src="/images/zsalert2.png"></image>
+      </view>
+      <view class="close" bindtap="catchBgTap"><image src="/images/close.png"></image></view>
+      <view class="h-220"></view>
+      <view class="info">
+        <view class="tit">恭喜你，店铺审核成功</view>
+        <view class="h-25"></view>
+        <view class="tips">您可以在（http://xxx.xx.com）管理您的店铺</view>
+        <view class="tips">您的账号：{{account}}</view>
+        <view class="tips">您的密码：{{psd}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="dealertw" wx:if="{{status == 3}}">
+    <view class="dealert">
+      <view class="figuretop">
+        <image src="/images/zsalert1.png"></image>
+      </view>
+      <view class="close" bindtap="catchBgTap"><image src="/images/close.png"></image></view>
+      <view class="h-220"></view>
+      <view class="info">
+        <view class="tit">申请失败！</view>
+        <view class="h-25"></view>
+        <view class="tips">原因: {{failcause}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

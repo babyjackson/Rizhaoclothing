@@ -1,0 +1,102 @@
+<!--pages/component/yhqw/yhq/yhq.wxml-->
+<view class="myyhq" bindtap="tabFun">
+  <view class="item {{tabArr.curHdIndex=='0'? 'active' : ''}}" data-id="0">未使用(2)</view>   
+  <view class="item {{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1">已使用(0)</view>
+  <view class="item {{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2">已过期(0)</view>   
+</view>
+<view class="yhqcon">
+  <view class="cont-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    
+    <!--有优惠券-->
+    <view class="notused" wx:if="{{wsy}}">
+      <!--未使用-->
+      <view-yhq class="clearfix" wx:for="{{wsy}}" wx:key="id">
+        <view class="fl figure zsbg">
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+          <view class="h30"></view>
+          <view class="quan">
+            <image src="{{imgurl}}/images/yhqquan.png"></image>
+          </view>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl">平台券</view-tips>{{item.tips}}
+          </view>
+          <view class="dd">
+            <navigator class="ljsy lsbg">立即使用</navigator>
+          </view>
+          <view class="time">{{item.time}}</view>
+          <view class="yts" wx:if="{{true}}">
+            <image src="{{imgurl}}/images/kgqt.png"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+    <!--没有优惠券-->
+    <view class="yhqno" wx:else>
+      <view class="h85"></view>
+      <view class="img">
+        <image src="{{imgurl}}/images/noyhq.png"></image>
+      </view>
+      <view class="text">
+        <view>没有优惠券？</view>
+        <navigator class="go">去企业店铺看看</navigator>
+      </view>
+      <view class="dimg">
+        <image src="{{imgurl}}/images/noyhqd.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    <!--已使用-->
+    <view class="hadused">
+      <view-yhq class="clearfix" wx:for="{{ysy}}" wx:key="id">
+        <view class="fl figure hsbg">
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+          <view-quan>
+            <image src="{{imgurl}}/images/yhqquan.png"></image>
+          </view-quan>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl hbg">平台券</view-tips>{{item.tips}}
+          </view>
+          <view class="dd"></view>
+          <view class="time">{{item.time}}</view>
+          <view class="yjsy">
+            <image src="{{imgurl}}/images/yyjsy.png"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    <!--已过期-->
+    <view class="expired">
+      <view-yhq class="clearfix" wx:for="{{ygq}}" wx:key="id">
+        <view class="fl figure hsbg">
+          <view class="je">
+            ¥<text>{{item.je}}</text>
+          </view>
+         <view-quan>
+            <image src="{{imgurl}}/images/yhqquan.png"></image>
+          </view-quan>
+        </view>
+        <view class="fr dl">
+          <view class="titq">
+            <view-tips class="fl hbg">平台券</view-tips>{{item.tips}}
+          </view>
+          <view class="dd"></view>
+          <view class="time">{{item.time}}</view>
+          <view class="yts">
+            <image src="{{imgurl}}/images/ygq.png"></image>
+          </view>
+        </view>
+      </view-yhq>
+    </view>
+  </view>
+</view>

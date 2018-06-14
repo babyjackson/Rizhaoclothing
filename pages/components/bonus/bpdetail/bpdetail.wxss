@@ -1,0 +1,377 @@
+/* pages/components/bonus/bpdetail/bpdetail.wxss */
+.hb-30{
+  height: 30rpx;
+  background: #f3f4f6;
+}
+.line_w65{
+  width: 65rpx;
+  height: 2rpx;
+  background: #e5e5e5;
+  margin-top: 56rpx;
+}
+.h-35{
+  height: 35rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+.h-10{
+  height: 10rpx;
+}
+.h-15{
+  height: 15rpx;
+}
+.h-20{
+  height: 20rpx;
+}
+.h-60{
+  height: 60rpx;
+}
+.h-40{
+  height: 40rpx;
+}
+.h-110{
+  height: 110rpx;
+}
+.clearfix::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bannerw{
+  width: 750rpx;
+  height: 750rpx;
+  position: relative;
+}
+.bans{
+  width: 750rpx;
+  height: 750rpx;
+}
+.bans .img{
+  width: 750rpx;
+  height: 750rpx;
+}
+.bans .img image{
+  display: block;
+  width: 750rpx;
+  height: 750rpx;
+}
+.pageban{
+  position: absolute;
+  z-index: 500;
+  width: 110rpx;
+  height: 50rpx;
+  background: #4e4d4e;
+  border-radius: 30rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #fffefe;
+  text-align: center;
+  line-height: 50rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+}
+/**nature标题***/
+.nature{
+  height: 250rpx;
+  padding: 0 15rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.nature .jfprice{
+  font-size: 37rpx;
+  color: #5cbff1;
+  line-height: 90rpx;
+}
+.nature .titw{
+  width: 720rpx;
+  font-size: 28rpx;
+  color: #000000;
+  line-height: 50rpx;
+  overflow: hidden;
+  margin-right: 35rpx;
+}
+
+.xian2{
+  height: 75rpx;
+  width: 2rpx;
+  background: #eeeeee;
+}
+.nature .titw .scw{
+  width: 140rpx;
+  height: 105rpx;
+  overflow: hidden;
+}
+.nature .titw .scw .sc .ico{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 auto;
+}
+.nature .titw .scw .sc .ico image{
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+}
+.nature .titw .scw .sc .text{
+  font-size: 24rpx;
+  color: #000000;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.dyprice{
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 32rpx;
+  color: #0cc8a5;
+  font-weight: bold;
+}
+.amount{
+  width: 750rpx;
+  height: 105rpx;
+  line-height: 105rpx;
+}
+.amount .lab{
+  font-size: 26rpx;
+  color: #111111;
+  font-weight: bold;
+  line-height: 105rpx;
+  margin-left: 30rpx;
+}
+.amount .changenum{
+  width: 160rpx;
+  height: 45rpx;
+  overflow: hidden;
+  border-radius: 3rpx;
+  border:3rpx solid #f3f3f3;
+  margin: 15rpx 30rpx 0 0;
+  padding: 8rpx 0;
+}
+.amount .changenum .minus{
+  width: 40rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #54d8c0;
+  border-right: 2rpx solid #f3f3f3;
+}
+.amount .changenum .numw{
+  width: 70rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  position: relative;
+}
+
+.amount .changenum .numw .num{
+  border: 0;
+  outline: 0;
+  background: #ffffff;
+  display: block;
+  width: 70rpx;
+  height: 45rpx;
+  padding: 0;
+  margin: 0;
+  font-size: 20rpx;
+  line-height: 45rpx;
+}
+.amount .changenum .plus{
+  width: 40rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #54d8c0;
+  border-left: 2rpx solid #f3f3f3;
+}
+/***联系详情***/
+.relation{
+  height: 255rpx;
+  background: #fff;
+  padding: 0 15rpx;
+}
+.relation .tit{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  font-size: 30rpx;
+  color: #1e1e1e;
+}
+.relation .info{
+  padding: 20rpx 0;
+  height: 115rpx;
+}
+.relation .info .linkman{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #5a5a5a;
+  margin: 20rpx 0;
+}
+.relation .info .ico{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.relation .info .ico image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.relation .info .tel{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #5a5a5a;
+  margin: 20rpx 0;
+}
+/***promise**/
+.promise{
+  padding: 30rpx 15rpx;
+  background: #fff;
+}
+.promise .item{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #2b2b2b;
+  margin-right: 20rpx;
+}
+.promise .item .ico{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.promise .item .ico image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+/****描述*/
+.describe{
+  padding: 0 15rpx;
+  background: #fff;
+}
+.describe .tit{
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 28rpx;
+  color: #000000;
+}
+.describe .text{
+  font-size: 26rpx;
+  color: #000000;
+  line-height: 35rpx;
+}
+/***图文**/
+.imagetextw{
+  background:#fff;
+}
+.imagetextw .ptit{
+  height: 110rpx;
+  width: 270rpx;
+  line-height: 110rpx;
+  font-size: 28rpx;
+  color: #171717;
+  text-align: center;
+  margin:0 auto;
+}
+.imagetext .img{
+  width: 750rpx;
+}
+.imagetext .img image{
+  display: block;
+  width: 100%;
+}
+/**回到顶部**/
+.fixedRight{
+  width: 90rpx;
+  height: 210rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 40rpx;
+  z-index: 500;
+}
+.fixedRight .circular{
+  width: 95rppx;
+  height: 95rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fixedRight .circular image{
+  width: 95rpx;
+  height: 95rpx;
+  display: block;
+}
+/***底部**/
+.fixedfoot{
+  position: fixed;
+  width: 750rpx;
+  height: 110rpx;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 500;
+}
+.fixedfoot .foot{
+  height: 70rpx;
+  width: 750rpx;
+}
+.fixedfoot .lfoot{
+  padding: 0 20rpx;
+
+}
+.fixedfoot .foot .section{
+  width: 100rpx;
+  display: block;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 10rpx 0;
+}
+.fixedfoot .foot .section.btn1{
+  border-right: 2rpx solid #e5e5e5;
+}
+.fixedfoot .foot .section .img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.fixedfoot .foot .section .img image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.fixedfoot .foot .section .text{
+  font-size: 24rpx;
+  color: #434343;
+  text-align: center;
+  line-height: 25rpx;
+  margin-top: 15rpx;
+}
+button::after{
+  border:0;
+}
+.fixedfoot .foot .btnwr{
+  width: 510rpx;
+  height: 110rpx;
+}
+.fixedfoot .foot .btnwr .ljcg{
+  width: 510rpx;
+  height: 110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  font-size: 35rpx;
+  color: #ffffff;
+  background:#5cbff1;
+  overflow: hidden;
+}

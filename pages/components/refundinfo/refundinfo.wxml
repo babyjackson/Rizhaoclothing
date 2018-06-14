@@ -1,0 +1,49 @@
+<!--pages/component/refundinfo/refundinfo.wxml-->
+<!--退款状态-->
+<view class="tkstatus">
+  <view class="status">请等待商家处理</view>
+  <view class="time">还剩余1天23小时59分</view>
+</view>
+<!--退款处理-->
+<view class="dealwith">
+  <view class="tit">您已成功发起退款申请，请耐心等待商家处理</view>
+  <view class="ul">
+    <view class="li">·商家同意或者超时未处理，系统将退款给您</view>
+    <view class="li">·如果商家拒绝，您可以修改退款申请后再次发起，商家会从新处理</view>
+  </view>
+</view>
+<view class="h-15"></view>
+<!--退款信息-->
+<view class="tkgoodsinfo">
+  <view class="tit">退款信息</view>
+  <view class="goods clearfix">
+    <view class="figure fl">
+      <image src="{{imgurl}}/images/allimg.jpg"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tits">智能运动手环心率心跳血压监测防水多功能跑步记计步女健康手表男</view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="li">退款原因：不想买了</view>
+    <view class="li">退款金额：¥45.00</view>
+    <view class="li">申请时间：2018-4-20 16：07</view>
+    <view class="li">退款编号：59589595959</view>
+  </view>
+</view>
+<view class="h-95"></view>
+<!--底部-->
+<view class="footbtn clearfix">
+  <button class="item fl">
+    <view class="img fl">
+      <image src="{{imgurl}}/images/tklxmjico.png"></image>
+    </view>
+    联系卖家
+  </button>
+  <button class="item fl">
+    <view class="img fl">
+      <image src="{{imgurl}}/images/tkbddhico.png"></image>
+    </view>
+    拨打电话
+  </button>
+</view>

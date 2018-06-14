@@ -1,0 +1,32 @@
+<!--pages/component/search/search.wxml-->
+<!--搜索-->
+<form>
+  <view class="searchw clearfix">
+    <view class="search fl">
+      <input type="text" name="search"/>
+    </view>
+    <navigator class="searchbtn fr" open-type="redirect" url="/pages/components/searchlist/searchlist">
+    <!--view class="ico fl"><image src="{{imgurl}}/images/searchico.png"></image></view-->
+    搜索</navigator>
+  </view>
+  <!--历史搜索-->
+  <view class="pastsearch {{reveal ? 'show':''}}">
+    <view class="ptopw clearfix">
+      <view class="tit fl">历史搜索</view>
+      <view class="clear fr" bindtap='clearRecord'>清除</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" wx:for="{{pastsearch}}" wx:key="id">{{item.value}}</view>
+    </view>
+  </view>
+  <!--热门搜索-->
+  <view class="hotsearch">
+    <view class="ptopw clearfix">
+      <view class="tit fl">热门搜索</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" wx:for="{{hotsearch}}" wx:key="id">{{item.value}}</view>
+    </view>
+  </view>
+</form>
+

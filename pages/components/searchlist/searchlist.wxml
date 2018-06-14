@@ -1,0 +1,24 @@
+<!--pages/component/searchlist/searchlist.wxml-->
+<!--搜索-->
+<view class="searchw">
+  <navigator class="search" open-type='redirect' url="/pages/components/search/search">
+    <view class="ico fl"><image src="{{imgurl}}/images/search.png"></image></view>
+    <input type="text" disabled='true' value="护肤品"/>
+  </navigator>
+</view>
+  
+<!--list-->
+<view class="searchlist">
+  <view class="item clearfix" wx:for="{{searchlist}}" wx:key="id">
+    <navigator class="figure fl" url="{{item.url}}">
+      <image src="{{item.img}}"></image>
+    </navigator>
+    <view class="dl fl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="price clearfix">
+        <view class="pri fl">¥{{item.price}}</view>
+        <navigator class="ckxq fr" url="{{item.url}}">立即购买</navigator>
+      </view>
+    </view>
+  </view>
+</view>

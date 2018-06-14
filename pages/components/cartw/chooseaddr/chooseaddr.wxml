@@ -1,0 +1,32 @@
+<!--pages/component/dzgl/dzgl.wxml-->
+
+<!--有地址-->
+<view class="hasshdz" wx:if="{{listdz}}">
+ <view class="address clearfix" wx:for="{{listdz}}" wx:for-index="index" wx:key="id">
+ <view-item bindtap="selectClick">
+ <view class="fl dz">
+    <view class="dzqx">{{item.addre}}</view>
+    <view class="lxfs">{{item.name}} {{item.tel}}</view>
+  </view>
+  <!--view class="xz fr" wx:if="{{selectval == index}}" data-index="{{index}}">
+    <image src="/img/danxuanxz.png"></image>
+  </view-->
+ </view-item>
+ </view>
+ <view class="adddz">
+  <navigator class="addzW clearfix" url="/pages/components/cartw/addaddr/addaddr">
+    <view class="jia fl">+</view>
+    <view class="fr zi">新增收货地址</view>
+  </navigator>
+ </view>
+</view>
+<!--没有地址-->
+<view class="noshdz" wx:else>
+  <view class="h105"></view>
+  <view class="img"><image src='{{imgurl}}/images/noaddrimg.png'></image></view>
+  <view class="mtit">您还没有地址哦，赶紧添加一个吧~</view>
+  <view class="h40"></view>
+  <navigator url="/pages/component/addaddr/addaddr">
+    <button class="tjxdz">添加新地址</button>
+  </navigator>
+</view>

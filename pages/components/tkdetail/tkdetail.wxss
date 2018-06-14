@@ -1,0 +1,145 @@
+/* pages/component/tkdetail/tkdetial.wxss */
+.h-15{
+  height: 15rpx;
+}
+.h-95{
+  height: 95rpx;
+}
+page{
+  background: #f4f4f4;
+}
+.tkstatus{
+  height: 90rpx;
+  padding: 45rpx 50rpx;
+  background: #f4f4f4;
+}
+.tkstatus .status{
+  font-size: 30rpx;
+  color: #5cbff1;
+  line-height: 30rpx;
+}
+.tkstatus .time{
+  font-size: 24rpx;
+  color: #969696;
+  line-height: 25rpx;
+  margin-top: 20rpx;
+}
+.tkamount{
+  padding: 0 20rpx;
+  height: 175rpx;
+  background: #fff;
+}
+.tkamount .section{
+  height: 85rpx;
+  line-height: 85rpx;
+}
+.tkamount .section .lab{
+  font-size: 24rpx;
+  color: #565656;
+}
+.tkamount .section .yje{
+  font-size: 30rpx;
+  color: #f03e39;
+}
+.tkamount .section .je{
+  font-size: 24rpx;
+  color: #717272;
+}
+.tkamount .section:nth-of-type(1){
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.tkgoodsinfo{
+  height: 485rpx;
+  background: #fff;
+  width: 750rpx;
+}
+.tkgoodsinfo .tit{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: #565656;
+  text-indent: 20rpx;
+  background: #fff;
+}
+.tkgoodsinfo .goods{
+  height: 180rpx;
+  width: 750rpx;
+  background: #f4f4f4;
+}
+.tkgoodsinfo .goods .figure{
+  width: 140rpx;
+  height: 140rpx;
+  display: block;
+  margin: 20rpx;
+}
+.tkgoodsinfo .goods .figure image{
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+}
+.tkgoodsinfo .goods .dl{
+  width: 530rpx;
+  margin: 20rpx 0;
+  height: 140rpx;
+  overflow: hidden;
+}
+.tkgoodsinfo .goods .dl .tits{
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 40rpx;
+}
+.tkgoodsinfo .info{
+  height: 170rpx;
+  padding: 30rpx 20rpx;
+  background: #fff;
+}
+.tkgoodsinfo .info .li{
+  font-size: 22rpx;
+  color: #8c8c8c;
+  line-height: 35rpx;
+}
+
+.footbtn{
+  border-top: 0rpx solid #0cc8a5;
+  height:95rpx;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+.footbtn .item{
+  width: 374rpx;
+  height: 95rpx;
+  display: block;
+  border: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 95rpx;
+  text-align: left;
+}
+.footbtn .item:nth-of-type(1){
+  border-right: 2rpx solid #e5e5e5;
+}
+button{
+  padding: 0;
+  margin: 0;
+}
+button::after{
+  border: 0;
+  border-radius: 0;
+}
+.footbtn .item .img{
+  width: 55rpx;
+  height: 55rpx;
+  margin: 25rpx 35rpx 20rpx 95rpx;
+}
+.footbtn .item .img image{
+  display: block;
+  width: 55rpx;
+  height: 55rpx;
+}

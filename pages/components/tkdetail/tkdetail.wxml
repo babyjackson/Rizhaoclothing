@@ -1,0 +1,52 @@
+<!--pages/component/tkdetail/tkdetial.wxml-->
+<!--退款状态-->
+<view class="tkstatus">
+  <view class="status">退款成功</view>
+  <view class="time">2018年4月20日 16:45</view>
+</view>
+<!--退款金额-->
+<view class="tkamount">
+  <view class="section clearfix">
+    <view class="lab fl">退款总金额</view>
+    <view class="yje fr">¥29.00</view>
+  </view>
+  <view class="section clearfix">
+    <view class="lab fl">退款总金额</view>
+    <view class="je fr">¥29.00</view>
+  </view>
+</view>
+<view class="h-15"></view>
+<!--退款信息-->
+<view class="tkgoodsinfo">
+  <view class="tit">退款信息</view>
+  <view class="goods clearfix">
+    <view class="figure fl">
+      <image src="{{imgurl}}/images/allimg.jpg"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tits">智能运动手环心率心跳血压监测防水多功能跑步记计步女健康手表男</view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="li">退款原因：不想买了</view>
+    <view class="li">退款金额：¥45.00</view>
+    <view class="li">申请时间：2018-4-20 16：07</view>
+    <view class="li">退款编号：59589595959</view>
+  </view>
+</view>
+<view class="h-95"></view>
+<!--底部-->
+<view class="footbtn clearfix">
+  <button class="item fl">
+    <view class="img fl">
+      <image src="{{imgurl}}/images/tklxmjico.png"></image>
+    </view>
+    联系卖家
+  </button>
+  <button class="item fl">
+    <view class="img fl">
+      <image src="{{imgurl}}/images/tkbddhico.png"></image>
+    </view>
+    拨打电话
+  </button>
+</view>

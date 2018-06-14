@@ -1,0 +1,39 @@
+<!--pages/components/categorcy/categorcy.wxml-->
+ <!-- 搜索 -->
+ <view class="search">
+  <navigator class="input" url="/pages/components/search/search">
+    <input type="text" disabled='true' placeholder="搜索热门商品"/>
+    <view class="icon">
+      <image src="{{imgUrl}}/images/search.png"></image>
+    </view>
+  </navigator>
+ </view>
+<!--con  -->
+<view class="search_con clearfix">
+  <view class="scroll_nav">
+    <scroll-view scroll-y="true" style="height:1020rpx;" scroll-width-animate="true">
+      <view class="item {{cur === index ? 'active':''}}" wx:for="{{rollNav}}" wx:key="id" bindtap="gainTab" data-index="{{index}}">
+          {{item}}
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll_con">
+    <scroll-view scroll-y="true" style="height:1020rpx;" scroll-width-animate="true">
+      <view class="h_20"></view>
+      <view class="sban">
+        <image src="{{secondNav.banimg}}"></image>
+      </view>
+      <view class="h_45"></view>
+      <view class="first_nav">{{secondNav.firstNav}}</view>
+      <view class="second_nav clearfix">
+        <navigator class="item" wx:for="{{secondNav.second}}" wx:key="id" url="{{item.url}}">
+          <view class="figure">
+            <image src="{{item.imgic}}"></image>
+          </view>
+          <view class="text">{{item.text}}</view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>

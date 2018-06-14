@@ -1,0 +1,61 @@
+/* pages/component/hykw/hyksm/hyksm.wxss */
+page{
+  background: #f4f4f4;
+}
+.vipcard{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+  margin: 20rpx auto;
+  border-radius: 12rpx 12rpx 0 0;
+  position: relative;
+}
+.vipcard .vcardbg{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+  background: #5cbff1;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.vipcard .vcardbg image{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+}
+.vipcard .viplevel{
+  position: absolute;
+  font-size: 26rpx;
+  color: #ffffff;
+  line-height: 30rpx;
+  top: 130rpx;
+  left: 50rpx;
+}
+
+.hyksmt{
+  margin-top: 15rpx;
+  width: 750rpx;
+  height: 380rpx;
+  background: #fff;
+}
+.hyksmt .tit{
+  width: 715rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 31rpx;
+  color: #666666;
+  border-bottom: 1rpx solid #ececec;
+  margin-left: 20rpx;
+}
+.hyksmt .text{
+  padding: 40rpx;
+}
+.hyksmt .text view-p{
+  display: block;
+  font-size: 23rpx;
+  color: #666666;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.h40{
+  height: 40rpx;
+}

@@ -1,0 +1,26 @@
+<!--pages/alert/alert.wxml-->
+<template name="alert">
+  <!--弹层-->
+  <view class="dropdown-bg"></view>
+  <view class="dealertw">
+    <view class="dealert">
+      <view class="h-50"></view>
+      <view class="tit">微信授权</view>
+      <view class="h-40"></view>
+      <view class="com clearfix">
+        <view class="logo fl"><image src="{{logo}}"></image></view>
+        <view class="cname fl">{{cname}}申请获取以下权限:</view>
+      </view>
+      <view class="h-25"></view>
+      <view class="line2"></view>
+      <view class="h-35"></view>
+      <!-- <view class="openinfo">
+        <view class="fl dian">·</view>获得你的公开信息（昵称、头像等）
+      </view> -->
+      <view class="btn">
+        <button class="allow fr" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" bindtap='catchBgTap'>授权</button>
+        <button class="refuse fr" lang="zh_CN" bindtap='catchBgTap'>取消</button>
+      </view>
+    </view>
+  </view>
+</template>

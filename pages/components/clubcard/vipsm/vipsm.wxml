@@ -1,0 +1,20 @@
+<!--pages/component/hykw/hyksm/hyksm.wxml-->
+<view class="hyksmw">
+  <!--vip卡-->
+  <view class="vipcard">
+    <view class="vcardbg">
+      <image src="{{imgurl}}/images/vipcard.png"></image>
+    </view>
+    <view class="viplevel">普通会员</view>
+  </view>
+  <!--会员卡说明-->
+  <view class="hyksmt">
+    <view class="tit">会员卡说明</view>
+    <view class="text">
+      <view-p>1、此卡可享受会员优惠待遇；</view-p>
+      <view-p>2、此卡不得购买产品，不得与其它优惠同时使用；</view-p>
+      <view-p>3、此卡的最终解释权归本店所有。</view-p>
+    </view>
+    <view class="h40"></view>
+  </view>
+</view>

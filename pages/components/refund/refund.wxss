@@ -1,0 +1,274 @@
+/* pages/component/refund/refund.wxss */
+page{
+  background: #f4f4f4;
+}
+.h-75{
+  height: 75rpx;
+}
+.h-15{
+  height: 15rpx;
+}
+.tkgoods{
+  background: #ffffff;
+}
+.tkgoods .figure{
+  width: 140rpx;
+  height: 140rpx;
+  display: block;
+  margin: 25rpx 20rpx;
+}
+.tkgoods .figure image{
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+}
+.tkgoods .dl{
+  width: 535rpx;
+  height: 140rpx;
+  display: block;
+  margin: 25rpx 0 0 0;
+}
+.tkgoods .dl .tit{
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 45rpx;
+}
+.recausew{
+  width: 750rpx;
+  height: 130rpx;
+  background: #fff;
+}
+.choosecause{
+  padding: 25rpx 20rpx 0 20rpx;
+}
+.choosecause .lab{
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 30rpx;
+}
+.choosecause .choose{
+  font-size: 24rpx;
+  color: #a6a5a5;
+  line-height: 30rpx;
+}
+.recausew .tcause{
+  height: 35rpx;
+  padding: 10rpx 20rpx;
+}
+.recausew .tcause input{
+  display: block;
+  width: 600rpx;
+  height: 35rpx;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 24rpx;
+  color: #a6a5a5;
+  z-index: 2;
+}
+.maskcause{
+  display: none;
+}
+.expand .maskcause{
+    width: 750rpx;
+    height: 735rpx;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    opacity: 1;
+    bottom: 0;
+    display: block;
+}
+.a-dropdown-bg {
+    opacity: 0;
+}
+.maskcause .tit{
+  width: 750rpx;
+  height: 100rpx;
+  background: #f6f6f6;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #000000;
+}
+.a-dropdown-wrapper.expand {
+    position: fixed;
+    height: 100%;
+    z-index: 99;
+}
+.maskcause .cause{
+  width: 710rpx;
+  height: 550rpx;
+  background: #fff;
+  margin: 0 auto;
+}
+.maskcause .cause .item{
+  height: 100rpx;
+  display: inline-block;
+  width: 710rpx;
+  border-top: 1rpx solid #e5e5e5;
+  overflow: hidden;
+}
+.maskcause .cause .item:nth-of-type(1){
+  border: 0;
+}
+.maskcause .cause .item .yy{
+  color: #484848;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+.maskcause .cause .item .ico{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+.maskcause .btntj{
+  height: 90rpx;
+  width: 750rpx;
+  background: #5cbff1;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.expand .a-dropdown-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 100;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.tkamount{
+  width: 750rpx;
+  height: 70rpx;
+  background: #ffffff;
+}
+.tkamount .lab{
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 70rpx;
+  margin-left: 20rpx;
+}
+.tkamount .amount{
+  font-size: 24rpx;
+  color: #f03e39;
+  line-height: 70rpx;
+  margin-left: 25rpx;
+}
+.tktips{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 22rpx;
+  color: #9a9a9a;
+  background: #f4f4f4;
+  margin-left: 20rpx;
+}
+.tksate{
+  height: 70rpx;
+  background: #fff;
+}
+.tksate .lab{
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 70rpx;
+  text-indent: 20rpx;
+}
+.tksate .inp{
+  width: 600rpx;
+  height: 70rpx;
+  margin-left: 15rpx;
+  font-size: 24rpx;
+  color: #979797;
+  overflow: hidden;
+}
+.tksate .inp input{
+  width: 600rpx;
+  height: 70rpx;
+  outline: 0;
+  border: 0;
+  font-size: 24rpx;
+  color: #979797;
+}
+.scpicture{
+  width: 750rpx;
+  background: #fff;
+}
+.scpicture .tit{
+  height: 70rpx;
+  line-height: 70rpx;
+  text-indent: 20rpx;
+  font-size: 24rpx;
+  color: #565656;
+}
+.scpicture .choosePic{
+  width: 540rpx;
+  padding: 0rpx 0rpx 30rpx 0;
+}
+.scpicture .choosePic view-item{
+  display: block;
+  width: 115rpx;
+  height: 115rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-bottom: 15rpx;
+  position: relative;
+  border:2rpx solid #d4d4d4;
+  border-radius: 1rpx;
+}
+.scpicture .choosePic view-item image{
+  width: 115rpx;
+  height: 115rpx;
+  display: block;
+}
+.scpicture .choosePic view-item .delimg{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: -15rpx;
+  top: -10rpx;
+  z-index: 5;
+ }
+.scpicture .choosePic view-item .delimg image{
+  width: 25rpx;
+  height: 25rpx;
+  display: block;
+  margin-left: 15rpx;
+}
+.scpicture .choosePic .img{
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin-left: 15rpx;
+  border-radius: 1rpx;
+  background: #eeeeee;
+}
+.scpicture .choosePic .img image{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+}
+.submit{
+  height: 75rpx;
+  text-align: center;
+  line-height: 75rpx;
+  background: #5cbff1;
+  color: #fff;
+  font-size: 30rpx;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  left: 0;
+}

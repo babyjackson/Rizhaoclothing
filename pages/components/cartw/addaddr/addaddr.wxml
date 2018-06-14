@@ -1,0 +1,36 @@
+<!--pages/component/xzdz/xzdz.wxml-->
+<!--编辑地址-->
+<form bindsubmit="formSubmit" report-submit="true">
+ 
+<view class="editdz">
+  <view class="h20"></view>
+  
+  <view class="section clearfix">
+    <text class="fl">收货人：</text>
+    <input type="text" name="name" placeholder="{{name}}" focus="{{focus}}" class="fl"/>
+  </view>
+  <view class="h2"></view>
+  <view class="section clearfix">
+    <text class="fl">手机号：</text>
+    <input type="number" name="tel" placeholder="{{tel}}" focus="{{focus}}" class="fl"/>
+  </view>
+  <view class="h20"></view>
+  <view class="section clearfix">
+    <text class="fl">所在地区：</text>
+    <picker name="addre" class="qxz fl" mode="region" value="{{addreValue}}" range="{{addreRange}}" bindchange="bindRegionChange" custom-item="{{customItem}}">
+      {{addreRange[0]}} {{addreRange[1]}} {{addreRange[2]}}
+    <!--{{addreRange[addreValue]}}-->
+    </picker>
+  </view>
+  <view class="h2"></view>
+  <view class="section clearfix">
+    <text class="fl">详细地址：</text>
+    <input name="door" type="text" placeholder="{{door}}"  focus="{{focus}}" class="fl"/>
+  </view>
+  <view class="h2"></view>
+</view>
+<view class="h140"></view>
+<view class="bc">
+<button formType="submit">保存</button>
+</view>
+</form>

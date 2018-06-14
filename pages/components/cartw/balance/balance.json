@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单结算",
+  "navigationBarBackgroundColor": "#5abdef",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "#fefefe",
+  "backgroundColor": "#fff"
+}

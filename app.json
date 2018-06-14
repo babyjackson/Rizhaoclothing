@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/components/categorcy/categorcy",
+    "pages/components/cartw/scart/scart",
+    "pages/components/cartw/balance/balance",
+    "pages/components/cartw/chooseaddr/chooseaddr",
+    "pages/components/cartw/addaddr/addaddr",
+    "pages/components/cartw/cleargoods/cleargoods",
+    "pages/components/cartw/paysuccess/paysuccess",
+    "pages/components/lineitem/lineitem",
+    "pages/components/refund/refund",
+    "pages/components/refundinfo/refundinfo",
+    "pages/components/refundlist/refundlist",
+    "pages/components/tkdetail/tkdetail",
+    "pages/components/search/search",
+    "pages/components/searchlist/searchlist",
+    "pages/components/me/me",
+    "pages/components/order/order",
+    "pages/components/evaluate/evalu/evalu",
+    "pages/components/evaluate/think/think",
+    "pages/components/coupons/coupons",
+    "pages/components/clubcard/vipxq/vipxq",
+    "pages/components/clubcard/vipsm/vipsm",
+    "pages/components/clubcard/vipbuy/vipbuy",
+    "pages/components/setaddr/setaddr",
+    "pages/components/meapply/meapply",
+    "pages/components/collect/collect",
+    "pages/components/bonus/mebp/mebp",
+    "pages/components/bonus/bplist/bplist",
+    "pages/components/bonus/bpshop/bpshop",
+    "pages/components/bonus/bpdetail/bpdetail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"日照服装零售",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/components/categorcy/categorcy",
+      "text": "分类"
+      },
+      {
+        "pagePath": "pages/components/cartw/scart/scart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/components/me/me",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "debug": true
+}

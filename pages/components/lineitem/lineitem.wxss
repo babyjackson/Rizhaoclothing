@@ -1,0 +1,321 @@
+/* pages/component/lineitem/lineitem.wxss */
+.h-10{
+  height: 10rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+page{
+  background: #eeeeee;
+}
+.ostatus{
+  width: 750rpx;
+  height: 200rpx;
+  overflow: hidden;
+  background: #bde5f9;
+}
+.ostatus .dl{
+  width: 370rpx;
+  height: 200rpx;
+}
+.ostatus .dl .sta{
+  font-size: 35rpx;
+  color: #59bdef;
+  line-height: 40rpx;
+  margin: 60rpx 0 0 65rpx;
+}
+.ostatus .dl .tips{
+  color: #59bdef;
+  font-size: 21rpx;
+  line-height: 22rpx;
+  margin-left: 65rpx;
+  margin-top: 15rpx;
+}
+.ostatus .figure{
+  margin-right: 60rpx;
+  width: 220rpx;
+  height: 195rpx;
+  display: block;
+  overflow: hidden;
+}
+.ostatus .figure image{
+  display: block;
+  width: 220rpx;
+  height: 195rpx;
+}
+.status{
+  display: none;
+}
+.status.show{
+  display: block;
+}
+.addressinfo{
+  width: 750rpx;
+  height: 190rpx;
+  background: #ffffff;
+}
+.addressinfo .consignee{
+  width: 625rpx;
+  height: 35rpx;
+  line-height: 40rpx;
+  padding: 25rpx 0;
+  margin-left: 95rpx;
+  font-size: 28rpx;
+  color: #1e1e1e;
+}
+.addressinfo .address{
+  height: 80rpx;
+}
+.addressinfo .address .ico{
+  width: 40rpx;
+  height: 45rpx;
+  display: block;
+  margin: 7rpx 25rpx;
+  overflow:hidden;
+}
+.addressinfo .address .ico image{
+  width: 40rpx;
+  height: 45rpx;
+  display: block;
+}
+.addressinfo .address .addr{
+  width: 625rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #3f3f3f;
+  line-height: 40rpx;
+}
+/**商品info***/
+.goodsinfo{
+  background: #fff;
+}
+.storename{
+  height: 35rpx;
+  padding: 20rpx 0;
+}
+.storename .ico{
+  width:35rpx;
+  height: 35rpx;
+  display: block;
+  margin: 0 20rpx;
+}
+.storename .ico image{
+  display: block;
+  width: 35rpx;
+  height:35rpx;
+}
+.storename .name{
+  font-size: 22rpx;
+  color: #0e0d0e;
+  line-height: 35rpx;
+}
+.storename .alt{
+  width: 20rpx;
+  height: 35rpx;
+  display: block;
+  margin-left: 20rpx;
+}
+.storename .alt image{
+  display: block;
+  width: 20rpx;
+  height: 35rpx;
+}
+.goodes{
+  background: #fffbff;
+}
+.goodes .figure{
+  width: 155rpx;
+  height: 165rpx;
+  margin: 0 20rpx;
+}
+.goodes .figure image{
+  display: block;
+  width: 155rpx;
+  height: 165rpx;
+}
+.goodes .info{
+  width: 380rpx;
+  height: 165rpx;
+  overflow: hidden;
+}
+.goodes .info .design{
+  font-size: 26rpx;
+  line-height: 35rpx;
+  color: #000000;
+}
+.goodes .info .size{
+  font-size: 24rpx;
+  color: #888788;
+  line-height: 30rpx;
+  margin-top: 5rpx;
+}
+.goodes .pdl{
+  margin-right: 20rpx;
+}
+.goodes .pdl .price{
+  font-size: 28rpx;
+  line-height: 35rpx;
+  color: #131113;
+}
+.goodes .pdl .yprice{
+  font-size: 28rpx;
+  line-height: 35rpx;
+  color: #838183;
+  text-decoration:line-through;
+}
+.goodes .pdl .num{
+  font-size: 28rpx;
+  line-height: 35rpx;
+  color: #838183;
+}
+.payinfo{
+  height: 200rpx;
+  padding: 0 20rpx;
+}
+.payinfo .section{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 25rpx;
+  color: #141414;
+}
+.payinfo .section .yellow{
+  color: #f03e39;
+}
+.contactway{
+  height: 155rpx;
+  padding: 0 20rpx;
+}
+.contactway button{
+  display: block;
+  width: 350rpx;
+  height: 85rpx;
+  padding: 0;
+  margin: 0;
+  color: #fefefe;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}
+.contactway button .ico{
+  width: 45rpx;
+  height: 45rpx;
+  display: block;
+  overflow: hidden;
+  margin: 20rpx 20rpx 0 90rpx;
+}
+.contactway button .ico image{
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+button::after{
+  border: 0;
+}
+.contactway button.seller{
+  background: #a3d5ef;
+}
+.contactway button.calltel{
+  background: #5abdef;
+}
+.contactway button text{
+  line-height: 85rpx;
+}
+.createo{
+  background: #fff;
+  padding: 25rpx;
+}
+.createo view{
+  font-size: 24rpx;
+  color: #323432;
+  line-height: 30rpx;
+}
+.cnxh{
+  background-color: #efefef;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+}
+/***猜你喜欢***/
+.cnxh{
+  background-color: #eeeeee;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+   background-color: #eeeeee;
+}
+/***猜你喜欢***/
+.like{
+  padding: 0 20rpx;
+}
+.like .item{
+  width: 345rpx;
+  height: 530rpx;
+  background: #fff;
+  border-radius: 5rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.like .item:nth-of-type(odd){
+  float: left;
+}
+.like .item:nth-of-type(even){
+  float: right;
+}
+.like .item .figure{
+  width: 345rpx;
+  height: 345rpx;
+}
+.like .item .figure image{
+  display: block;
+  width: 345rpx;
+  height: 345rpx;
+}
+
+.like .item .tit{
+  max-height: 85rpx;
+  overflow: hidden;
+  width: 310rpx;
+  margin: 15rpx auto;
+  font-size: 24rpx;
+  color: #393939;
+  line-height: 40rpx;
+}
+.like .item .price{
+  font-size: 36rpx;
+  color: #fe4a9f;
+  line-height: 40rpx;
+  width: 310rpx;
+  margin: 0 auto;
+}
+ /**退款**/
+ .refund{
+   width: 750rpx;
+   height: 100rpx;
+   background: #f9f9f9;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+ }
+.refund .sqtk{
+  line-height: 100rpx;
+  font-size: 26rpx;
+  color: #202020;
+  margin-left: 60rpx;
+}
+.gsqtk{
+  width:100rpx;
+font-size:26rpx;
+color:#5abdef;
+border:1rpx solid #5abdef;
+height:40rpx;
+margin-top:20rpx;
+margin-right:20rpx;
+text-align:center;
+line-height:40rpx;
+border-radius:10rpx;
+}

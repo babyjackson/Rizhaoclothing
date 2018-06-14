@@ -1,0 +1,33 @@
+<!--pages/component/clubcard/vipbuy/vipbuy.wxml-->
+<form>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <!--view class="ico fl"><image src="/images/tipsxin.png"></image></view-->
+      购买方式
+    </view>
+    <view class="inp fl">
+      <input type="text" value="{{buy.way}}" disabled="true"/>
+    </view>
+  </view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <!--view class="ico fl"><image src="/images/tipsxin.png"></image></view-->
+      购买年限
+    </view>
+    <view class="inp fl">
+      <input type="text" value="{{buy.year}}" disabled="true"/>
+    </view>
+  </view>
+  <view class="section clearfix">
+    <view class="lab fl">
+      <!--view class="ico fl"></view-->
+      应付金额
+    </view>
+    <view class="inp fl">
+      <input type="text" value="¥{{buy.price}}" disabled="true"/>
+    </view>
+  </view>
+</form>
+<view class="paynow">
+  <navigator class="pay" url=''>立即支付</navigator>
+</view>

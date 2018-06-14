@@ -1,0 +1,159 @@
+/* pages/component/hykw/hykxq/hykxq.wxss */
+
+page{
+  background: #f4f4f4;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.vipcard{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+  margin: 20rpx auto;
+  border-radius: 12rpx 12rpx 0 0;
+  position: relative;
+}
+.vipcard .vcardbg{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+  background: #5cbff1;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.vipcard .vcardbg image{
+  width: 715rpx;
+  height: 250rpx;
+  display: block;
+}
+.vipcard .viplevel{
+  position: absolute;
+  font-size: 26rpx;
+  color: #ffffff;
+  line-height: 30rpx;
+  top: 130rpx;
+  left: 50rpx;
+}
+
+.zxqy{
+  width: 750rpx;
+  height: 200rpx;
+  padding: 0 20rpx;
+  background: #ffffff;
+}
+.zxqy .titw{
+  width: 710rpx;
+  height: 95rpx;
+  border-bottom: 1rpx solid #ececec;
+  font-size: 31rpx;
+  color: #666666;
+  line-height: 95rpx;
+  margin-top: 15rpx;
+}
+.zxqy .hyzk{
+  width: 710rpx;
+  height: 95rpx;
+}
+.zxqy .hyzk .ico{
+  width: 55rpx;
+  height: 55rpx;
+  padding: 20rpx 0;
+}
+.zxqy .hyzk .ico image{
+  display: block;
+  width: 55rpx;
+  height: 55rpx;
+}
+.zxqy .hyzk .tit{
+  width: 145rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin-left: 20rpx;
+  font-size: 31rpx;
+  color: #666666;
+  padding: 20rpx 0;
+}
+.zxqy .hyzk .zk{
+  font-size: 28rpx;
+  color: #a7a7a7;
+  margin-right: 40rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  padding: 20rpx 0;
+}
+.others{
+   background: #ffffff;
+   padding: 0 15rpx;
+    margin-top: 20rpx;
+}
+.others .titw{
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 31rpx;
+  color: #666666;
+}
+
+.otherli view-item{
+  display: block;
+  width: 710rpx;
+  height: 95rpx;
+  border-top:2rpx solid #f1f1f1;
+}
+.otherli view-item navigator{
+  padding: 25rpx 0;
+  display: block;
+}
+.otherli view-item .ico{
+  width: 50rpx;
+  height: 45rpx;
+}
+.otherli view-item .ico image{
+  display: block;
+  width: 50rpx;
+  height: 45rpx;
+}
+.otherli view-item .tit{
+  margin-left: 25rpx;
+  font-size: 31rpx;
+  color: #666666;
+  line-height: 45rpx;
+}
+.otherli view-item .alt{
+  width: 20rpx;
+  height: 45rpx;
+}
+.otherli view-item .alt image{
+  display: block;
+  width: 20rpx;
+  height: 45rpx;
+}
+.otherli view-item .dhz{
+  margin-right: 20rpx;
+  line-height: 45rpx;
+  font-size: 28rpx;
+  color: #a7a7a7;
+}
+.buycard .buy{
+  width: 710rpx;
+  height: 95rpx;
+  position: fixed;
+  bottom: 20rpx;
+  left: 20rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+  background: #5cbff1;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 95rpx;
+  text-align: center;
+}

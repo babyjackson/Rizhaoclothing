@@ -1,0 +1,88 @@
+<!--pages/component/ddjs/ddjs.wxml-->
+<form bindsubmit="bindFormSubmit">
+<view class="hasshdz">
+<!--地址-->
+ <navigator class="address clearfix" url="/pages/components/cartw/chooseaddr/chooseaddr">
+  <view class="fl dz clearfix"  wx:if="{{address}}">
+    <view class="dzico_1 fl"><image src="{{imgurl}}/images/dzico_2.png"></image></view>
+    <view class="fl">
+      <view class="dzqx"><text>{{address.name}}</text><text>{{address.tel}}</text></view>
+      <view class="lxfs">
+        <text>{{address.addre}}</text>
+      </view>
+    </view>
+      
+  </view>
+  <view wx:else class="nodz fl clearfix">
+    <view class="dzico fl"><image src="{{imgurl}}/images/dzico.png"></image></view>
+    请填写收货地址
+  </view>
+  <view class="xz fr"> <image src="{{imgurl}}/images/maltr.png"></image> </view>
+ </navigator>
+ <view class="h-20"></view>
+ <!--结算商品-->
+  <view class="cleargoods clearfix" wx:if="{{true}}">
+    <view class="fl goods">
+      <scroll-view scroll-x="true" scroll-with-animation="true">
+        <view-item wx:for="{{cleargoods}}" wx:key="id">
+          <image src="{{item.img}}"></image>
+        </view-item>
+      </scroll-view>
+    </view>
+    <navigator class="toview fr" url="/pages/components/cartw/cleargoods/cleargoods">
+      共{{cleargoods.length}}件
+      <view class="altr">
+        <image src="{{imgurl}}/images/maltr.png"></image> 
+      </view>
+    </navigator>
+  </view>
+  <!--只有一个商品的结算-->
+  <view class="cleargoodxq clearfix" wx:else>
+    <view class="figure fl">
+      <image src="{{imgurl}}/images/allimg.jpg"></image>
+    </view>
+    <view class="tit fl">阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼</view>
+    <view class="dl fr">
+      <view class="price">¥182.00</view>
+      <view class="num">x1</view>
+    </view>
+  </view>
+  <!--留言-->
+  <view class="section clearfix">
+    <textarea placeholder="填选：买家留言（50字以内）" name="textarea" class="fl"/>
+  </view>
+  <!--商品总价-->
+  <view class="section clearfix">
+    <view class="text fl">商品总价</view>
+    <view class="price fr">¥158.10</view>
+  </view>
+  <view class="section clearfix">
+    <view class="text fl">打折减</view>
+    <view class="price fr yellow">-¥0.00</view>
+  </view>
+  <view class="section clearfix">
+    <view class="text fl">邮费</view>
+    <view class="price fr yellow">+¥0.00</view>
+  </view>
+  <view class="h-20"></view>
+  <view class="section clearfix">
+    <view class="text fl">优惠券</view>
+    <view class="coupon fr">省20元：20元优惠券</view>
+  </view>
+  <view class="section clearfix">
+    <view class="text fl">可用695积分抵用6.95元</view>
+    <view class="checkbox fr">
+      <checkbox value="" checked="true" size="20" color="#f03e39"/>
+    </view>
+  </view>
+</view>
+<!--底部-->
+<view class="h100"></view>
+<view class="gwcdb clearfix">
+  <button class="accounts fr" bindtap="navfun" form-type="submit">提交订单</button>
+  <view class="sum fr">
+    实付款:
+    <text class="hejprice">¥158.00</text>
+  </view>
+</view>
+</form>

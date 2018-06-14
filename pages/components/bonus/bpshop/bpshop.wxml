@@ -1,0 +1,36 @@
+<!--pages/components/bonus/bpshop/bpshop.wxml-->
+<!--banner-->
+<view class="bannerjf">
+  <image src="{{imgsrc}}/images/bonus_4.png"></image>
+</view>
+<!--积分-->
+<view class="jfnavw">
+  <view class="jfnav">
+    <navigator class="clearfix">
+      <image src="{{imgsrc}}/images/bonus_2.png" class="fl"></image>
+      <text class="fl">当前积分</text>
+      <text class="fl">330</text>
+    </navigator>
+    <navigator class="clearfix">
+      <image src="{{imgsrc}}/images/bonus_3.png" class="fl"></image>
+      <text class="fl">积分明细</text>
+      <text class="fl">330</text>
+    </navigator>
+  </view>
+  <view class="xian"></view>
+</view>
+<!--热门商品-->
+<view class="hotgoodsw">
+  <view class="hottit">热门商品</view>
+  <view class="hotgood clearfix">
+    <view-item wx:for="{{jfscli}}" wx:key="id">
+      <navigator class="figure" url="{{item.navurl}}">
+        <view class="img"><image src="{{item.imgsrc}}"></image></view>
+        <view class="tit">{{item.tit}}</view>
+      </navigator>
+      <view class="pjf"><text>{{item.jf}}</text> 积分</view>
+      <button class="ljdh {{item.classn}}">{{item.btn}}</button>
+    </view-item>
+  </view>
+</view>
+

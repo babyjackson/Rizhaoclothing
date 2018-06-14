@@ -1,0 +1,101 @@
+/* pages/components/bonus/bplist/bplist.wxss */
+page{
+  background: #f4f4f4;
+}
+.curjf{
+  height: 320rpx;
+  background: #fff;
+  position: relative;
+}
+.h60{
+  height: 60rpx;
+}
+.curjf .t{
+  text-align: center;
+  font-size: 23rpx;
+  color: #6a6a6a;
+}
+.curjf .zhi{
+  height: 160rpx;
+  line-height: 160rpx;
+  text-align: center;
+  font-size: 140rpx;
+  color: #5cbff1;
+}
+.curjf .bgi{
+  width: 240rpx;
+  height: 20rpx;
+  margin: 0 auto;
+}
+.curjf .bgi image{
+  width: 240rpx;
+  height: 20rpx;
+  display: block;
+}
+.curjf .qdh{
+  width: 170rpx;
+  height: 60rpx;
+  border-radius: 30rpx 0 0 30rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #ffffff;
+  background: #5cbff1;
+  text-align: center;
+  line-height: 60rpx;
+  position: absolute;
+  right: 0;
+  bottom: 50rpx;
+}
+.jfmxw{
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+.jfmxw .mxw{
+  height: 100rpx;
+  background: #f4f4f4;
+  color: #949494;
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+.jfmxw .mxw .tit{
+  margin-left: 35rpx;
+}
+.jfmxw .mxw .mx view{
+  margin-right: 30rpx;
+}
+.jfmx view-item{
+  display: block;
+  height: 150rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+.jfmx view-item .dl{
+  height: 90rpx;
+  padding: 30rpx 0 30rpx 35rpx;
+  line-height: 45rpx;
+}
+.jfmx view-item .dl .dtit{
+  font-size: 28rpx;
+  color: #1d1d1d;
+  line-height: 45rpx;
+}
+.jfmx view-item .dl .time{
+  font-size: 21rpx;
+  color: #7c7c7c;
+  line-height: 45rpx;
+}
+.jfmx view-item .dl .time text{
+  line-height: 35rpx;
+  margin-right: 15rpx;
+}
+.jfmx view-item .jfdt{
+  font-size: 28rpx;
+  line-height: 150rpx;
+  margin-right: 35rpx;
+}
+.jia{
+  
+  color: #4d4d4d;
+}
+.jian{
+  color: #5cbff1;
+}

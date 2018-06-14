@@ -1,0 +1,139 @@
+/* pages/components/bonus/bpshop/bpshop.wxss */
+page{
+  background: #f4f4f4;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bannerjf{
+  width: 750rpx;
+  height: 240rpx;
+}
+.bannerjf image{
+  width: 750rpx;
+  height: 240rpx;
+  display: block;
+}
+.jfnavw{
+  height: 90rpx;
+  background: #ffffff;
+  position: relative;
+}
+.jfnavw .jfnav{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+}
+.jfnavw .jfnav navigator{
+  width: 50%;
+  height: 40rpx;
+  padding: 25rpx 0;
+  display: block;
+}
+.jfnavw .xian{
+  width: 2rpx;
+  height: 90rpx;
+  background: #eaeaea;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.jfnavw .jfnav navigator image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin-left: 55rpx;
+}
+.jfnavw .jfnav navigator text{
+  line-height: 40rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  color: #1f1f1f;
+}
+.hotgoodsw{
+  padding: 0 20rpx;
+  background: #f4f4f4;
+}
+.hotgoodsw .hottit{
+  height: 115rpx;
+  line-height: 115rpx;
+  margin-left: 15rpx;
+  font-size: 28rpx;
+  color: #949494;
+}
+.hotgood{
+  width: 710rpx;
+  overflow: hidden;
+}
+.hotgood view-item{
+  width: 345rpx;
+  height: 425rpx;
+  background: #ffffff;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.hotgood view-item:nth-of-type(odd){
+  float: left;
+}
+.hotgood view-item:nth-of-type(even){
+  float:right;
+}
+.hotgood view-item .figure{
+  padding: 10rpx 10rpx 0 10rpx;
+}
+.hotgood view-item .figure .img{
+  width: 325rpx;
+  height: 210rpx;
+}
+.hotgood view-item .figure .img image{
+  width: 325rpx;
+  height: 210rpx;
+  display: block;
+}
+.hotgood view-item .figure .tit{
+  height: 40rpx;
+  width: 325rpx;
+  overflow: hidden;
+  margin-top: 15rpx;
+  font-size: 28rpx;
+}
+.hotgood view-item .pjf{
+  height: 45rpx;
+  line-height: 45rpx;
+  color: #a0a0a0;
+  text-align: center;
+  font-size: 25rpx;
+}
+.hotgood view-item .pjf text{
+  color: #5cbff1;
+  font-size: 25rpx;
+}
+.hotgood view-item .ljdh{
+  width: 268rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: 10rpx auto;
+  display: block;
+  background: #fff;
+  font-size: 30rpx;
+  padding: 0;
+}
+button::after{
+  border: 0;
+  outline: 0;
+}
+.hsbtn{
+  border:2rpx solid #5cbff1;
+  color: #5cbff1;
+}
+.ysqbtn{
+  color: #c4c4c4;
+  border:2rpx solid #c4c4c4;
+}

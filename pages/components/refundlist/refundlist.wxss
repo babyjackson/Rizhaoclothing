@@ -1,0 +1,92 @@
+/* pages/component/refundlist/refundlist.wxss */
+
+page{
+  background: #f4f4f4;
+}
+.tkitem{
+  background: #fff;
+  margin-bottom: 15rpx;
+}
+.tkitem .tit{
+  height: 75rpx;
+  background: #fff;
+  font-size: 24rpx;
+  line-height: 75rpx;
+  color: #565656;
+  text-indent: 15rpx;
+  width: 750rpx;
+}
+.tkitem .tit text{
+  font-size: 24rpx;
+  line-height: 75rpx;
+  color: #565656;
+}
+.tkitem .goods{
+  height: 180rpx;
+  background: #f4f4f4;
+  width: 750rpx;
+}
+.tkitem .goods .figure{
+  width: 140rpx;
+  height: 140rpx;
+  display: block;
+  margin: 20rpx 25rpx;
+}
+.tkitem .goods .figure image{
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+}
+.tkitem .goods .dl{
+  width: 540rpx;
+  height: 140rpx;
+  overflow: hidden;
+  margin: 20rpx 0;
+}
+.tkitem .goods .dl .gtit{
+  width: 480rpx;
+  height: 90rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #565656;
+  line-height: 45rpx;
+}
+.tkitem .goods .dl .num{
+  font-size:24rpx;
+  color:#565656;
+  line-height:30rpx;
+  margin-top:10rpx;
+}
+.tkitem .status{
+  height: 64rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+  line-height: 64rpx;
+  font-size: 24rpx;
+  color: #565656;
+}
+.tkitem .status .ico{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 15rpx 10rpx 15rpx 20rpx;
+}
+.tkitem .status .ico image{
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+}
+.tkitem .ckxq{
+  height: 80rpx;
+  width: 750rpx;
+  background: #fff;
+}
+.tkitem .ckxq .ackxq{
+  width: 145rpx;
+  height: 45rpx;
+  border:2rpx solid #5cbff1;
+  color: #5cbff1;
+  font-size: 24rpx;
+  line-height: 45rpx;
+  text-align: center;
+  margin: 15rpx 20rpx;
+}

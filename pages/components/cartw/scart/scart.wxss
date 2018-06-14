@@ -1,0 +1,237 @@
+/* pages/components/cartw/scart/scart.wxss */
+.h-55{
+  height: 55rpx;
+}
+.h-20{
+  height: 20rpx;
+}
+page{
+  background: #eeeeee;
+}
+.carthasgoods{
+  width:100%;
+}
+
+.storegoods{
+  margin-bottom: 10rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #ebe9ed;
+}
+.storegoods .store{
+  height: 49rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 20rpx 20rpx;
+}
+.storegoods .store .ico{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 15rpx;
+}
+.storegoods .store .ico image{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.storegoods .store .storename{
+  line-height: 50rpx;
+  font-size: 25rpx;
+  color: #283133;
+  margin-left: 15rpx;
+}
+.storegoods .store .alt{
+  width: 20rpx;
+  height: 50rpx;
+  display: block;
+  margin-left: 15rpx;
+}
+.storegoods .store .alt image{
+  display: block;
+  width: 20rpx;
+  height: 50rpx;
+}
+.goodslist{
+  padding: 25rpx 20rpx;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.goodslist .goodsimg{
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+.goodslist .goodsimg image{
+  width: 160rpx;
+  height:160rpx;
+  display: block;
+}
+.goodslist .goosr{
+  width: 450rpx;
+}
+.goodslist .goosr .titW{
+  width: 450rpx;
+  position: relative;
+}
+.goodslist .goosr .titW .tit{
+  width:310rpx;
+  font-size: 23rpx;
+  color: #3e3e3e;
+  height: 80rpx;
+  overflow:hidden;
+  line-height: 40rpx;
+}
+.goodslist .goosr .titW .price{
+  font-size: 28rpx;
+  color: #f14543;
+  line-height: 35rpx;
+}
+
+.goodslist .goosr .cancel{
+  width: 45rpx;
+  height:45rpx;
+}
+.goodslist .goosr .cancel image{
+  display: block;
+  width: 45rpx;
+  height:45rpx;
+}
+.goodslist .goosr .jgnum{
+  width: 250rpx;
+  height: 65rpx;
+}
+.goodslist .goosr .jgnum .price{
+  width: 115rpx;
+  font-size: 28rpx;
+  color: #d30808;
+}
+.goodslist .goosr .jgnum .num{
+  width: 200rpx;
+  height: 60rpx;
+}
+.goodslist .goosr .jgnum .num view{
+  width: 60rpx;
+  height: 60rpx;
+  color: #090909;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color:#f7f7f7;
+  }
+.goodslist .goosr .jgnum .num input{
+  width: 80rpx;
+  height: 60rpx;
+  display: block;
+  font-size: 30rpx;
+  background: #f7f7f7;
+  border:0;
+  color:#090909;
+  text-align: center;
+}
+.goodslist icon{
+ margin: 75rpx 20rpx 0 0;
+}
+.h80{
+  height:80rpx;
+}
+.h100{
+  height:100rpx;
+}
+.gwcdb{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  border-top:1rpx solid #f1f1f1;
+  bottom: 0;
+  background: #fff;
+}
+
+.gwcdb .sum{
+ font-size: 28rpx;
+ color: #030303;
+ line-height: 100rpx;
+ padding-right: 40rpx;
+}
+.gwcdb .sum text{
+  color: #f14543;
+}
+.gwcdb .accounts{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+  width: 190rpx;
+  height: 100rpx;
+  background: #5abdef;
+  line-height: 100rpx;
+  text-align: center;
+}  
+/*  重写 checkbox 样式  */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: #9cd344;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+.gwcdb icon{
+  margin: 30rpx;
+}
+.gwcdb .quanxuan{
+  margin-top: 30rpx;
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+.hasnogoods{
+  width: 750rpx;
+  display: none;
+}
+.hasnogoods.show{
+  display: block;
+}
+.hasnogoods .figure{
+  width: 380rpx;
+  height: 310rpx;
+  margin: 0 auto;
+}
+.hasnogoods .figure image{
+  display: block;
+  width: 380rpx;
+  height: 310rpx;
+}
+.hasnogoods .tips{
+  width: 255rpx;
+  height: 100rpx;
+  margin: 30rpx auto;
+  text-align: center;
+  font-size: 30rpx;
+  color: #818181;
+  line-height: 45rpx;
+}
+.hasnogoods .tips text{
+  color: #818181;
+}
+.go_shop{
+  width: 240rpx;
+  height: 70rpx;
+  margin: 0 auto;
+  border: 2rpx solid #5abdef;
+  border-radius: 5rpx;
+  font-size: 25rpx;
+  color: #5abdef;
+  line-height: 70rpx;
+  text-align: center;
+}

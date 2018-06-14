@@ -1,0 +1,24 @@
+<!--pages/component/refundlist/refundlist.wxml-->
+
+<view class="hastklist" wx:if="{{tklist}}">
+  <view class="tkitem" wx:for="{{tklist}}" wx:key="id">
+    <view class="tit">{{item.dpname}}<text>></text></view>
+    <view class="goods clearfix">
+      <view class="figure fl">
+        <image src="{{item.gimg}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="gtit">{{item.gtit}}</view>
+        <view class="num fr">X{{item.num}}</view>
+      </view>
+    </view>
+    <view class="status">
+      <view class="ico fl"><image src="{{imgurl}}/images/tk_1.png"></image></view>
+      {{item.status}}
+    </view>
+    <view class="ckxq clearfix">
+      <navigator class="ackxq fr" url="{{item.url}}">查看详情</navigator>
+    </view>
+  </view>
+</view>
+<view class="notklist" wx:else></view>

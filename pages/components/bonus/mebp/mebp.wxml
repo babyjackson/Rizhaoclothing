@@ -1,0 +1,61 @@
+<!--pages/components/bonus/mebp/mebp.wxml-->
+
+<view class="curjf">
+  <view class="h60"></view>
+  <view class="t">当前积分</view>
+  <view class="zhi">330</view>
+  <view class="bgi"><image src="{{imgurl}}/images/bonus_1.png"></image></view>
+</view>
+<view class="mxscw">
+  <view class="mxsc">
+    <navigator class="jfmx clearfix" url="/pages/components/bonus/bplist/bplist">
+      <view class="ico fl"><image src="{{imgurl}}/images/bonus_2.png"></image></view>
+      <view class="dl fl">
+        <view class="tit">积分明细</view>
+        <view class="txt">查看积分使用明细</view>
+      </view>
+    </navigator>
+    <navigator class="jfmx clearfix" url="/pages/components/bonus/bpshop/bpshop">
+      <view class="ico fl"><image src="{{imgurl}}/images/bonus_3.png"></image></view>
+      <view class="dl fl">
+        <view class="tit">积分商城</view>
+        <view class="txt">积分兑换商城中心</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="xian"></view>
+</view>
+<!--积分任务-->
+<view class="jfrww">
+  <view class="tit">积分任务</view>
+  <view class="jfrw">
+    <view-item class="clearfix">
+      <view class="fl t">购物</view>
+      <view class="fl jjf">+4</view>
+      <view class="fr btn">
+        <button class="yellow bt">去购物</button>
+      </view>
+    </view-item>
+    <view-item class="clearfix">
+      <view class="fl t">登录</view>
+      <view class="fl jjf">+4</view>
+      <view class="fr btn">
+        <button class="grey bt">已完成</button>
+      </view>
+    </view-item>
+  </view>
+</view>
+<!--热门兑换-->
+<view class="hotgoodsw">
+  <view class="hottit">热门兑换</view>
+  <view class="hotgood clearfix">
+    <view-item wx:for="{{jfscli}}" wx:key="id">
+      <navigator class="figure" url="{{item.navurl}}">
+        <view class="img"><image src="{{item.imgsrc}}"></image></view>
+        <view class="tit">{{item.tit}}</view>
+      </navigator>
+      <view class="pjf"><text>{{item.jf}}</text> 积分</view>
+      <button class="ljdh {{item.classn}}">{{item.btn}}</button>
+    </view-item>
+  </view>
+</view>

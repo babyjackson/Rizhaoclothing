@@ -1,0 +1,66 @@
+/* pages/component/xzdz/xzdz.wxss */
+.fl{
+  float:left;
+}
+page{
+  background: #fff;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h20{
+  height: 20rpx;
+  background: #f7f7f7;
+}
+.h2{
+  height: 2rpx;
+  background: #f7f7f7;
+}
+.editdz{
+width: 100%;
+}
+.editdz .section{
+  padding: 25rpx 20rpx;
+}
+.editdz .section text{
+  display: block;
+  width: 160rpx;
+  font-size: 30rpx;
+  color: #525052;
+}
+.editdz .section input{
+  width: 490rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+  color: #706d6f;
+}
+.editdz .section .qxz{
+  width: 490rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+  color: #0d0d0d;
+}
+.bc{
+  padding: 0 15rpx;
+}
+.bc button{
+  text-align: center;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #5abdef;
+  width: 100%;
+  line-height: 100rpx;
+  letter-spacing: 5rpx;
+}
+.h140{
+  height:140rpx;
+}

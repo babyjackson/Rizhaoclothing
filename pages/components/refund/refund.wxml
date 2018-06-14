@@ -1,0 +1,76 @@
+<!--pages/component/refund/refund.wxml-->
+<form>
+  <view class="a-dropdown-wrapper {{active ? 'expand' : ''}}">
+    <!--商品-->
+    <view class="tkgoods clearfix">
+      <view class="figure fl">
+        <image src="{{imgurl}}/images/allimg.jpg"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">智能运动手环心率心跳血压监测防水多功能跑步记计步女健康手表男</view>
+      </view>
+    </view>
+    <view class="h-15"></view>
+    <!--退款原因-->
+    <view class="recausew">
+      <view class="choosecause clearfix">
+        <view class="fl lab">退款原因</view>
+        <view class="fr choose" bindtap="choosecause">请选择 ></view>
+      </view>
+      <view class="tcause">
+        <input type="text" value="{{tkcause}}" disabled='true'/>
+      </view>
+      <!--退款原因弹层-->
+      <view class="maskcause">
+        <view class="tit">退款原因</view>
+        <scroll-view class="cause" scroll-y style="height: 550rpx;">
+          <view class="item" wx:for="{{maskcause}}" wx:key="id" wx:for-index="index">
+            <view class="yy fl">{{item.cause}}</view>
+            <view class="ico fr">
+              <icon class="fl" wx:if="{{defalut == index}}" type="success" color="#2ad2ff" size="20" bindtap="setCause" data-index="{{index}}"/>
+              <icon class="fl" wx:else type="circle" bindtap="setCause" size="20" data-index="{{index}}"/>
+            </view>
+          </view>
+        </scroll-view>
+        <view class="btntj" bindtap="surechoose">关闭</view>
+      </view>
+      <view class="a-dropdown-bg"></view>
+    </view>
+    <view class="h-15"></view>
+    <!--退款金额-->
+    <view class="tkamount">
+      <view class="lab fl">退款金额：</view>
+      <view class="amount fl">¥45.00</view>
+    </view>
+    <view class="tktips">最多¥45.00，含发货邮费¥0.00</view>
+    <view class="tksate">
+      <view class="lab fl">退款说明</view>
+      <view class="inp fl">
+        <input type="text" placeholder='选填'/>
+      </view>
+    </view>
+    <view class="h-15"></view>
+    <view class="scpicture">
+      <view class="tit">上传凭证</view>
+      <view class="choosePic clearfix">
+        <view class="clearfix fl">
+          <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx' wx:key="id">
+            <image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image>
+            <view class="delimg" bindtap='deleteImg'>
+              <image src="{{imgurl}}/images/delimg.png"></image>
+            </view>
+          </view-item>
+        </view>
+        <view class="img fl" bindtap="chooseImage">
+          <image src="{{imgurl}}/images/scpzico.png"></image>
+        </view>
+    </view>
+    </view>
+  </view>
+  <view class="h-75"></view>
+  <view class="submit">
+    <navigator url="/pages/components/refundinfo/refundinfo">提交</navigator>
+  </view>
+</form>
+
+

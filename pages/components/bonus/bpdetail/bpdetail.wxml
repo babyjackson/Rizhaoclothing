@@ -1,0 +1,79 @@
+<!--pages/components/bonus/bpdetail/bpdetail.wxml-->
+<!--banner图-->
+<view class="bannerw">
+  <view class="ban">
+    <swiper class="bans" current="0" bindchange="EventHandle" data-length="{{ibanner.length}}">
+      <block wx:for="{{ibanner}}" wx:key="id" wx:for-index="{{index}}">
+        <swiper-item>
+          <navigator class="img" url="{{item.url}}" data->
+            <image src="{{item.img}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--分页-->
+  <view class="pageban">
+    {{current}}/{{length}}
+  </view>
+</view>
+<!--nature-->
+<view class="nature">
+  <view class="h-35"></view>
+  <view class="titw">MOPO摩普MP530淋浴花洒套装冷热淋雨屏喷头全铜龙头套装 </view>
+  <view class="jfprice">1520积分</view>
+</view>
+<view class="hb-30"></view>
+<!--数量-->
+<!--view class="amount cleafix">
+  <view class="fl lab">数量</view>
+  <view class="changenum fr">
+    <view class="minus fl" bindtap="minusNum">-</view>
+    <view class="numw fl"><input class="num fl" value="{{num}}" bindblur="numHandle" bindinput="keyboard" focus="{{focus}}"/></view>
+    <view class="plus fl" bindtap="plusNum">+</view>
+  </view>
+</view>
+<view class="hb-30"></view-->
+
+<!--图文详情-->
+<view class="imagetextw">
+  <view class="ptit clearfix">
+    <view class="line_w65 fl"></view>
+    图文详情
+    <view class="line_w65 fr"></view>
+  </view>
+  <view class="imagetext">
+    <view class="img" wx:for="{{imagetext}}" wx:key="id">
+      <image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+<!--回到顶部-->
+<!--view class="fixedRight">
+  <view class="scroll_top circular" bindtap="goTop">
+    <image src="{{imgurl}}/images/backtop.png"></image>
+  </view>
+</view-->
+<view class="h-110"></view>
+<!--底部-->
+<view class="fixedfoot">
+  <view class="foot clearfix">
+    <view class="lfoot fl clearfix">
+      <button class="section fl btn1">
+        <view class="sf">
+          <view class="img"><image src="{{imgurl}}/images/bonus_5.png"></image></view>
+          <view class="text">商城</view>
+        </view>
+      </button>
+      <button class="section fl">
+        <view class="sf">
+          <view class="img"><image src="{{imgurl}}/images/bonus_6.png"></image></view>
+          <view class="text">积分</view>
+        </view>
+      </button>
+    </view>
+    <view class="fl btnwr clearfix">
+      <navigator class="ljcg fl">立即兑换</navigator>
+    </view>
+  </view>
+</view>

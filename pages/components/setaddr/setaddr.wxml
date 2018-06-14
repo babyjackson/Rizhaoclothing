@@ -1,0 +1,51 @@
+<!--pages/component/setaddr/setaddr.wxml-->
+<view class="hasaddr" wx:if="{{address.length>0}}">
+  <view class="setaddrw">
+    <view class="item" wx:for="{{address}}" wx:for-index="index" wx:key="id">
+      <view class="addr">{{item.addr}}</view>
+      <view class="name">{{item.name}}<text>{{item.phone}}</text></view>
+      <view class="h-25"></view>
+      <view class="handle clearfix">
+        <view class="default fl">
+          <view class="checked fl" wx:if="{{defalut == index}}" data-index="{{index}}" bindtap="setDafalut">
+            <image src="{{imgurl}}/images/addrdefalutico.png"></image>
+          </view>
+          <view class="icon fl" wx:else data-index="{{index}}" bindtap="setDafalut"></view>
+          默认地址
+        </view>
+        <view class="delete fr" bindtap="deleteAddr" data-index="{{index}}">
+          <view class="icon fl">
+            <image src="{{imgurl}}/images/addrdeleteico.png"></image>
+          </view>
+          删除
+        </view>
+        <navigator class="editor fr" url="/pages/components/cartw/addaddr/addaddr">
+          <view class="icon fl">
+            <image src="{{imgurl}}/images/addreditorico.png"></image>
+          </view>
+          编辑
+        </navigator>
+      </view>
+      <view class="h-20"></view>
+    </view>
+  </view>
+  <!--新增收货地址-->
+  <view class="h-100"></view>
+  <navigator class="newaddaddr" url="/pages/components/cartw/addaddr/addaddr">
+    <view class="shdz">
+      <view class="ico fl"><image src="{{imgurl}}/images/addaddrs.png"></image></view>
+      新增收货地址
+    </view>
+  </navigator>
+</view>
+<!--没有地址-->
+<view class="noshdz" wx:else>
+  <view class="h-80"></view>
+  <view class="img"><image src="{{imgurl}}/images/noaddrimg.png"></image></view>
+  <view class="h40"></view>
+  <view class="mtit">您还没有地址哦，赶紧添加一个吧~</view>
+  <view class="h-40"></view>
+  <navigator url="/pages/components/cartw/addaddr/addaddr" class="tjxdz">
+    添加新地址
+  </navigator>
+</view>

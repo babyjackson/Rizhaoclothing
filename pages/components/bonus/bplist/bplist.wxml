@@ -1,0 +1,28 @@
+<!--pages/components/bonus/bplist/bplist.wxml-->
+<view class="curjf">
+  <view class="h60"></view>
+  <view class="t">当前积分</view>
+  <view class="zhi">330</view>
+  <view class="bgi"><image src="{{imgurl}}/images/bonus_1.png"></image></view>
+  <navigator class="qdh">去兑换  ></navigator>
+</view>
+<!--积分明细-->
+<view class="jfmxw">
+  <view class="mxw clearfix">
+    <view class="tit fl">积分明细</view>
+    <view class="mx fr clearfix">
+      <view class="fl">收入：330</view>
+      <view class="fl">支出：330</view>
+    </view>
+  </view>
+  <view class="jfmx">
+    <view-item class="clearfix" wx:for="{{jfmx}}" wx:key="id">
+      <view class="fl dl">
+        <view class="dtit">{{item.tit}}</view>
+        <view class="time"><text>{{item.date}}</text><text>{{item.time}}</text></view>
+      </view>
+      <view class="fr jfdt {{item.classn}}">{{item.jfdt}}</view>
+    </view-item>
+  </view>
+</view>
+

@@ -1,0 +1,53 @@
+/* pages/component/clubcard/vipbuy/vipbuy.wxss */
+page{
+  background: #f4f4f4;
+}
+.section{
+  padding: 0rpx 15rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #e2e2e2;
+}
+.section .lab{
+  width: 130rpx;
+  height: 25rpx;
+  padding: 28rpx 0;
+  font-size: 25rpx;
+  line-height: 25rpx;
+  color: #181818;
+}
+.section .lab .ico{
+  width: 15rpx;
+  height: 15rpx;
+}
+.section .lab .ico image{
+  display: block;
+  width: 15rpx;
+  height: 15rpx;
+}
+.section .inp{
+  width: 420rpx;
+  height: 80rpx;
+}
+.section .inp input{
+  display: block;
+  width: 420rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  color: #959595;
+}
+.paynow .pay{
+  width: 710rpx;
+  height: 95rpx;
+  position: fixed;
+  bottom: 20rpx;
+  left: 20rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+  background: #5cbff1;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 95rpx;
+  text-align: center;
+}

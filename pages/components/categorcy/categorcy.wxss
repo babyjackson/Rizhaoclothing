@@ -1,0 +1,110 @@
+/* pages/components/categorcy/categorcy.wxss */
+.h_45{
+  height: 45rpx;
+}
+.h_20{
+  height: 20rpx;
+}
+page{
+  height: 100%;
+  overflow: hidden;
+}
+.search{
+  height:60rpx;
+  padding: 15rpx 0 20rpx 0;
+  border-bottom: 1rpx solid #dddddd;
+  overflow: hidden;
+}
+.search .input{
+  position: relative;
+  width: 690rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+.search .input input{
+  display: block;
+  width: 690rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  color: #2a2a2a;
+  text-align: center;
+}
+.search .input .icon{
+  position: absolute;
+  left: 230rpx;
+  top: 14rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.search .input .icon image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.scroll_nav{
+  float: left;
+  width: 170rpx;
+  background: #f8f8f8;
+}
+.scroll_nav .item{
+  height: 100rpx;
+  width: 170rpx;
+  font-size: 24rpx;
+  color: #2a2a2a;
+  line-height: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.scroll_nav .item.active{
+  background: #ffffff;
+  font-size: 28rpx;
+}
+.scroll_con{
+  float: left;
+  width: 535rpx;
+  padding: 0 20rpx;
+}
+.scroll_con .sban{
+  height: 185rpx;
+  width: 535rpx;
+}
+.scroll_con .sban image{
+  display: block;
+  width: 535rpx;
+  height: 185rpx;
+}
+.scroll_con .first_nav{
+  line-height: 30rpx;
+  font-size: 28rpx;
+  color: #2a2a2a;
+}
+.scroll_con .second_nav{
+  width: 535rpx;
+}
+.scroll_con .second_nav .item{
+  float: left;
+  width: 33.3%;
+  padding-top: 25rpx;
+}
+.scroll_con .second_nav .item .figure{
+  width: 135rpx;
+  height: 135rpx;
+  margin: 0 auto;
+}
+.scroll_con .second_nav .item .figure image{
+  display: block;
+  width: 135rpx;
+  height: 135rpx;
+}
+.scroll_con .second_nav .item .text{
+  font-size: 24rpx;
+  color: #3d3d3d;
+  line-height: 25rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}
